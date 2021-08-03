@@ -1,0 +1,29 @@
+{
+  "journeeXassaideApp": {
+    "mouride": {
+      "home": {
+        "title": "Mourides",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mouride",
+        "createOrEditLabel": "Créer ou éditer un Mouride",
+        "notFound": "Aucun Mouride trouvé"
+      },
+      "created": "Un nouveau Mouride a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mouride avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mouride avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Mouride {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mouride"
+      },
+      "id": "ID",
+      "prenom": "Prenom",
+      "nom": "Nom",
+      "email": "Email",
+      "telephone": "Telephone",
+      "matricule": "Matricule",
+      "cuisine": "Cuisine"
+    }
+  }
+}

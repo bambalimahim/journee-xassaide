@@ -1,0 +1,27 @@
+{
+  "journeeXassaideApp": {
+    "cuisine": {
+      "home": {
+        "title": "Cuisines",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cuisine",
+        "createOrEditLabel": "Create or edit a Cuisine",
+        "notFound": "No Cuisines found"
+      },
+      "created": "A new Cuisine is created with identifier {{ param }}",
+      "updated": "A Cuisine is updated with identifier {{ param }}",
+      "deleted": "A Cuisine is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cuisine {{ id }}?"
+      },
+      "detail": {
+        "title": "Cuisine"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "capacite": "Capacite",
+      "lieu": "Lieu",
+      "mourides": "Mourides"
+    }
+  }
+}

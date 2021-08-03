@@ -1,0 +1,122 @@
+<div>
+  <h2 id="page-heading" data-cy="MourideHeading">
+    <span jhiTranslate="journeeXassaideApp.mouride.home.title">Mourides</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info mr-2" (click)="loadPage()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="journeeXassaideApp.mouride.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-mouride"
+        [routerLink]="['/mouride/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="journeeXassaideApp.mouride.home.createLabel"> Create a new Mouride </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="mourides?.length === 0">
+    <span jhiTranslate="journeeXassaideApp.mouride.home.notFound">No mourides found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="mourides && mourides.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+          <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="prenom">
+            <span jhiTranslate="journeeXassaideApp.mouride.prenom">Prenom</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="nom">
+            <span jhiTranslate="journeeXassaideApp.mouride.nom">Nom</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="email">
+            <span jhiTranslate="journeeXassaideApp.mouride.email">Email</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="telephone">
+            <span jhiTranslate="journeeXassaideApp.mouride.telephone">Telephone</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="matricule">
+            <span jhiTranslate="journeeXassaideApp.mouride.matricule">Matricule</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="cuisine.id">
+            <span jhiTranslate="journeeXassaideApp.mouride.cuisine">Cuisine</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mouride of mourides; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/mouride', mouride.id, 'view']">{{ mouride.id }}</a>
+          </td>
+          <td>{{ mouride.prenom }}</td>
+          <td>{{ mouride.nom }}</td>
+          <td>{{ mouride.email }}</td>
+          <td>{{ mouride.telephone }}</td>
+          <td>{{ mouride.matricule }}</td>
+          <td>
+            <div *ngIf="mouride.cuisine">
+              <a [routerLink]="['/cuisine', mouride.cuisine?.id, 'view']">{{ mouride.cuisine?.id }}</a>
+            </div>
+          </td>
+          <td class="text-right">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/mouride', mouride.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/mouride', mouride.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(mouride)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="mourides && mourides.length > 0">
+    <div class="row justify-content-center">
+      <jhi-item-count [params]="{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }"></jhi-item-count>
+    </div>
+
+    <div class="row justify-content-center">
+      <ngb-pagination
+        [collectionSize]="totalItems"
+        [(page)]="ngbPaginationPage"
+        [pageSize]="itemsPerPage"
+        [maxSize]="5"
+        [rotate]="true"
+        [boundaryLinks]="true"
+        (pageChange)="loadPage($event)"
+      ></ngb-pagination>
+    </div>
+  </div>
+</div>

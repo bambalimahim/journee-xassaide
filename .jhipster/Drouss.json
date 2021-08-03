@@ -1,0 +1,34 @@
+{
+  "name": "Drouss",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "xassaide",
+      "otherEntityRelationshipName": "drouss",
+      "relationshipName": "xassaide"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "lieu",
+      "otherEntityRelationshipName": "drouss",
+      "relationshipName": "lieu"
+    }
+  ],
+  "entityTableName": "drouss",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210803204825"
+}

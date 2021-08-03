@@ -1,0 +1,26 @@
+{
+  "journeeXassaideApp": {
+    "drouss": {
+      "home": {
+        "title": "Drousses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Drouss",
+        "createOrEditLabel": "Create or edit a Drouss",
+        "notFound": "No Drousses found"
+      },
+      "created": "A new Drouss is created with identifier {{ param }}",
+      "updated": "A Drouss is updated with identifier {{ param }}",
+      "deleted": "A Drouss is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Drouss {{ id }}?"
+      },
+      "detail": {
+        "title": "Drouss"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "xassaide": "Xassaide",
+      "lieu": "Lieu"
+    }
+  }
+}

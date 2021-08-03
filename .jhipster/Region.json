@@ -1,0 +1,35 @@
+{
+  "name": "Region",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "lieu",
+      "otherEntityRelationshipName": "region",
+      "relationshipName": "lieu",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "daara",
+      "otherEntityRelationshipName": "region",
+      "relationshipName": "daaras"
+    }
+  ],
+  "entityTableName": "region",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210803204818"
+}

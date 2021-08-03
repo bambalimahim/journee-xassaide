@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="mouride">
+      <h2 data-cy="mourideDetailsHeading"><span jhiTranslate="journeeXassaideApp.mouride.detail.title">Mouride</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ mouride.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.prenom">Prenom</span></dt>
+        <dd>
+          <span>{{ mouride.prenom }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.nom">Nom</span></dt>
+        <dd>
+          <span>{{ mouride.nom }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.email">Email</span></dt>
+        <dd>
+          <span>{{ mouride.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.telephone">Telephone</span></dt>
+        <dd>
+          <span>{{ mouride.telephone }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.matricule">Matricule</span></dt>
+        <dd>
+          <span>{{ mouride.matricule }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.mouride.cuisine">Cuisine</span></dt>
+        <dd>
+          <div *ngIf="mouride.cuisine">
+            <a [routerLink]="['/cuisine', mouride.cuisine?.id, 'view']">{{ mouride.cuisine?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/mouride', mouride.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

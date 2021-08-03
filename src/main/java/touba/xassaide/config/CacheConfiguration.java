@@ -48,6 +48,19 @@ public class CacheConfiguration {
             createCache(cm, touba.xassaide.domain.User.class.getName());
             createCache(cm, touba.xassaide.domain.Authority.class.getName());
             createCache(cm, touba.xassaide.domain.User.class.getName() + ".authorities");
+            createCache(cm, touba.xassaide.domain.Region.class.getName());
+            createCache(cm, touba.xassaide.domain.Region.class.getName() + ".daaras");
+            createCache(cm, touba.xassaide.domain.Lieu.class.getName());
+            createCache(cm, touba.xassaide.domain.Lieu.class.getName() + ".drousses");
+            createCache(cm, touba.xassaide.domain.Kourel.class.getName());
+            createCache(cm, touba.xassaide.domain.Cuisine.class.getName());
+            createCache(cm, touba.xassaide.domain.Cuisine.class.getName() + ".mourides");
+            createCache(cm, touba.xassaide.domain.Xassaide.class.getName());
+            createCache(cm, touba.xassaide.domain.Xassaide.class.getName() + ".drousses");
+            createCache(cm, touba.xassaide.domain.Daara.class.getName());
+            createCache(cm, touba.xassaide.domain.Daara.class.getName() + ".kourels");
+            createCache(cm, touba.xassaide.domain.Mouride.class.getName());
+            createCache(cm, touba.xassaide.domain.Drouss.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

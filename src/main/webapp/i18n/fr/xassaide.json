@@ -1,0 +1,25 @@
+{
+  "journeeXassaideApp": {
+    "xassaide": {
+      "home": {
+        "title": "Xassaides",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Xassaide",
+        "createOrEditLabel": "Créer ou éditer un Xassaide",
+        "notFound": "Aucun Xassaide trouvé"
+      },
+      "created": "Un nouveau Xassaide a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Xassaide avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Xassaide avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Xassaide {{ id }} ?"
+      },
+      "detail": {
+        "title": "Xassaide"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "drouss": "Drouss"
+    }
+  }
+}

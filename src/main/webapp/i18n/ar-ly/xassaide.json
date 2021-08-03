@@ -1,0 +1,25 @@
+{
+  "journeeXassaideApp": {
+    "xassaide": {
+      "home": {
+        "title": "Xassaides",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Xassaide",
+        "createOrEditLabel": "Create or edit a Xassaide",
+        "notFound": "No Xassaides found"
+      },
+      "created": "A new Xassaide is created with identifier {{ param }}",
+      "updated": "A Xassaide is updated with identifier {{ param }}",
+      "deleted": "A Xassaide is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Xassaide {{ id }}?"
+      },
+      "detail": {
+        "title": "Xassaide"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "drouss": "Drouss"
+    }
+  }
+}
