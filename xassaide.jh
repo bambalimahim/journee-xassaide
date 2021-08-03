@@ -1,0 +1,62 @@
+
+entity Region {
+	nom String required unique
+}
+
+entity Lieu {
+	nom String required unique
+}
+
+entity Kourel {
+	nom String required
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Cuisine {
+	nom String required unique,
+    capacite Integer
+}
+
+entity Xassaide {
+	nom String required
+}
+
+entity Daara {
+	nom String required
+}
+
+entity Mouride {
+	prenom String required,
+	nom String required,
+	email String,
+	telephone String required,
+    matricule String unique
+}
+
+entity Drouss {
+	nombre Integer required
+}
+
+
+relationship OneToOne {
+	Region{lieu} to Lieu,
+    Cuisine{lieu} to Lieu
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Daara{kourels} to Kourel,
+    Cuisine{mourides} to Mouride
+    Xassaide to Drouss,
+    Lieu to Drouss,
+    Region{daaras} to Daara
+}
+
+
+
+
+// Set pagination options
+paginate * with pagination
+
