@@ -1,0 +1,28 @@
+{
+  "name": "Xassaide",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "drouss",
+      "otherEntityRelationshipName": "xassaide",
+      "relationshipName": "drouss"
+    }
+  ],
+  "entityTableName": "xassaide",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210803204822"
+}

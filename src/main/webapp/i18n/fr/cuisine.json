@@ -1,0 +1,27 @@
+{
+  "journeeXassaideApp": {
+    "cuisine": {
+      "home": {
+        "title": "Cuisines",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Cuisine",
+        "createOrEditLabel": "Créer ou éditer un Cuisine",
+        "notFound": "Aucun Cuisine trouvé"
+      },
+      "created": "Un nouveau Cuisine a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Cuisine avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Cuisine avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Cuisine {{ id }} ?"
+      },
+      "detail": {
+        "title": "Cuisine"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "capacite": "Capacite",
+      "lieu": "Lieu",
+      "mourides": "Mourides"
+    }
+  }
+}

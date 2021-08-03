@@ -1,0 +1,40 @@
+{
+  "name": "Cuisine",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "capacite",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "lieu",
+      "otherEntityRelationshipName": "cuisine",
+      "relationshipName": "lieu",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mouride",
+      "otherEntityRelationshipName": "cuisine",
+      "relationshipName": "mourides"
+    }
+  ],
+  "javadoc": "not an ignored comment",
+  "entityTableName": "cuisine",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210803204821"
+}

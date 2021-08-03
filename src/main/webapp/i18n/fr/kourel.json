@@ -1,0 +1,25 @@
+{
+  "journeeXassaideApp": {
+    "kourel": {
+      "home": {
+        "title": "Kourels",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Kourel",
+        "createOrEditLabel": "Créer ou éditer un Kourel",
+        "notFound": "Aucun Kourel trouvé"
+      },
+      "created": "Un nouveau Kourel a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Kourel avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Kourel avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Kourel {{ id }} ?"
+      },
+      "detail": {
+        "title": "Kourel"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "daara": "Daara"
+    }
+  }
+}

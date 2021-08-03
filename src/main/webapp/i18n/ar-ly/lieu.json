@@ -1,0 +1,25 @@
+{
+  "journeeXassaideApp": {
+    "lieu": {
+      "home": {
+        "title": "Lieus",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Lieu",
+        "createOrEditLabel": "Create or edit a Lieu",
+        "notFound": "No Lieus found"
+      },
+      "created": "A new Lieu is created with identifier {{ param }}",
+      "updated": "A Lieu is updated with identifier {{ param }}",
+      "deleted": "A Lieu is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Lieu {{ id }}?"
+      },
+      "detail": {
+        "title": "Lieu"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "drouss": "Drouss"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "journeeXassaideApp": {
+    "drouss": {
+      "home": {
+        "title": "Drousses",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Drouss",
+        "createOrEditLabel": "Créer ou éditer un Drouss",
+        "notFound": "Aucun Drouss trouvé"
+      },
+      "created": "Un nouveau Drouss a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Drouss avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Drouss avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Drouss {{ id }} ?"
+      },
+      "detail": {
+        "title": "Drouss"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "xassaide": "Xassaide",
+      "lieu": "Lieu"
+    }
+  }
+}

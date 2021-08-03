@@ -1,0 +1,26 @@
+{
+  "journeeXassaideApp": {
+    "daara": {
+      "home": {
+        "title": "Daaras",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Daara",
+        "createOrEditLabel": "Create or edit a Daara",
+        "notFound": "No Daaras found"
+      },
+      "created": "A new Daara is created with identifier {{ param }}",
+      "updated": "A Daara is updated with identifier {{ param }}",
+      "deleted": "A Daara is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Daara {{ id }}?"
+      },
+      "detail": {
+        "title": "Daara"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "kourels": "Kourels",
+      "region": "Region"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "journeeXassaideApp": {
+    "daara": {
+      "home": {
+        "title": "Daaras",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Daara",
+        "createOrEditLabel": "Créer ou éditer un Daara",
+        "notFound": "Aucun Daara trouvé"
+      },
+      "created": "Un nouveau Daara a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Daara avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Daara avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Daara {{ id }} ?"
+      },
+      "detail": {
+        "title": "Daara"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "kourels": "Kourels",
+      "region": "Region"
+    }
+  }
+}

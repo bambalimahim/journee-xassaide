@@ -43,7 +43,9 @@
     "devServerPort": 4200,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Region", "Lieu", "Kourel", "Cuisine", "Xassaide", "Daara", "Mouride", "Drouss"],
+    "lastLiquibaseTimestamp": 1628023705000
   },
   "git-provider": "GitHub",
   "git-company": "bambalimahim",

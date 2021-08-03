@@ -1,0 +1,29 @@
+{
+  "journeeXassaideApp": {
+    "mouride": {
+      "home": {
+        "title": "Mourides",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mouride",
+        "createOrEditLabel": "Create or edit a Mouride",
+        "notFound": "No Mourides found"
+      },
+      "created": "A new Mouride is created with identifier {{ param }}",
+      "updated": "A Mouride is updated with identifier {{ param }}",
+      "deleted": "A Mouride is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mouride {{ id }}?"
+      },
+      "detail": {
+        "title": "Mouride"
+      },
+      "id": "ID",
+      "prenom": "Prenom",
+      "nom": "Nom",
+      "email": "Email",
+      "telephone": "Telephone",
+      "matricule": "Matricule",
+      "cuisine": "Cuisine"
+    }
+  }
+}

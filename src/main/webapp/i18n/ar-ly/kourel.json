@@ -1,0 +1,25 @@
+{
+  "journeeXassaideApp": {
+    "kourel": {
+      "home": {
+        "title": "Kourels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Kourel",
+        "createOrEditLabel": "Create or edit a Kourel",
+        "notFound": "No Kourels found"
+      },
+      "created": "A new Kourel is created with identifier {{ param }}",
+      "updated": "A Kourel is updated with identifier {{ param }}",
+      "deleted": "A Kourel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Kourel {{ id }}?"
+      },
+      "detail": {
+        "title": "Kourel"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "daara": "Daara"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="cuisine">
+      <h2 data-cy="cuisineDetailsHeading"><span jhiTranslate="journeeXassaideApp.cuisine.detail.title">Cuisine</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ cuisine.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.cuisine.nom">Nom</span></dt>
+        <dd>
+          <span>{{ cuisine.nom }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.cuisine.capacite">Capacite</span></dt>
+        <dd>
+          <span>{{ cuisine.capacite }}</span>
+        </dd>
+        <dt><span jhiTranslate="journeeXassaideApp.cuisine.lieu">Lieu</span></dt>
+        <dd>
+          <div *ngIf="cuisine.lieu">
+            <a [routerLink]="['/lieu', cuisine.lieu?.id, 'view']">{{ cuisine.lieu?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/cuisine', cuisine.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "name": "Lieu",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "drouss",
+      "otherEntityRelationshipName": "lieu",
+      "relationshipName": "drouss"
+    }
+  ],
+  "entityTableName": "lieu",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210803204819"
+}
